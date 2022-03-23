@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(72, 67, 75);
+}
+#pp{
+    text-align: center;
+    font-size: 80px;
+    font-family: serif;
+    color: chocolate;
+}
+
+
+.dd{
+   
+    border: double rgb(0, 0, 0) 14px;
+    border-radius: 30px;
+    margin-left: 30%;
+    text-align: center;
+    background-color: chocolate;
+    width: 600px;
+    height: 600px;
+}
