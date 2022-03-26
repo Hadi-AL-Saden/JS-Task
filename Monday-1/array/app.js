@@ -1,6 +1,6 @@
 //Task-1
 // let FavoriteFood=["منسف لحم جميدو كركي","مقلوبة","مولخية","صياديه لعيون الكوتش علاء"]
-// console.log(FavoriteFood [3]);
+// console.log(FavoriteFood );
 
 // let FavoriteSport =["swimming","hunting","Esports" ]
 // console.log(FavoriteSport);
@@ -13,9 +13,18 @@
 // ***************************************************************
 
 //Task-2
-// let firstOfArray=([1,2,3,4,5,6])
+firstOfArray=([1,2,3,4,5,6])
 
-// console.log(firstOfArray[0]);
+console.log(firstOfArray[0]);
+
+
+// ***************************************************************
+//Task-3
+// let lastOfArray=[1,2,3,4,]
+
+lastOfArray=([1,2,3,4,5,6,7,8])
+    console.log(lastOfArray.length);
+
 
 
 
