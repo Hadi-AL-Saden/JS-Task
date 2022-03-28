@@ -131,14 +131,14 @@
 
 
 
-document.createElement=("<h1> asda</h1>");
-console.log("<h1>");
+// document.createElement=("<h1> asda</h1>");
+// console.log("<h1>");
 
-let x= document.createElement["<div>"];
+// let x= document.createElement["div"];
 
-document.write("<h1>hadi</h1>");
+// document.write("<h1>hadi</h1>");
 
-
+// document.write(x);
 
 
 
@@ -205,3 +205,81 @@ document.write("<h1>hadi</h1>");
 
 // // ***************************************************************************************************************
 //class
+
+
+
+
+
+
+// *************************************************************************************************************
+// theName ="Hadi";
+// theAge = 22;
+// theAdress = "jordana";
+// tall = true;
+// price=500;
+// descaont=20;
+
+// if(theName==="Hadi"&&theAge===22 ){
+//     if( theAdress==="jordan"){
+//         price -=descaont;
+        
+//         document.write(price);
+//         document.write(true);
+        
+//     }else if(theAdress!="jordan"){
+//  document.write(price+100)
+//     }
+  
+
+// }
+
+
+
+// let st="hadi"
+
+// if("34"==="34"){
+// console.log("GOOD");
+// }
+// if(){
+
+// }
+
+// i=1
+// for(i=1,text="Hadi";i<=100;i++){
+//     document.write(i+text+"<br>")
+
+// }
+
+
+// let x=0
+// while (x<=10) {
+//     document.write(x+"<br>");
+//     x++;
+// }
+
+
+
+
+
+
+// **************************************************************************************
+//                                    $(localStorage)$
+
+
+// Set
+
+window.localStorage.setItem("color","red"); // norml way
+
+
+window.localStorage.fontSize = "30px";  // withOut setItem
+
+window.localStorage["fontWeigth"]= "bold";//      []
+
+
+
+// Get
+
+console.log(window.localStorage.getItem ("color"));
+console.log(window.localStorage.color);
+console.log(window.localStorage ["color"]);
+backgrondColor

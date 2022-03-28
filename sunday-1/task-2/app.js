@@ -4,29 +4,35 @@ let dd=Number(text);
 switch (dd) {
     case 1:
       day = "Sunday";
-      console.log("sunday");
+      
+      document.write("sunday");
       break;
     case 2:
       day = "Monday";
-      console.log("Monday");
+     
+      document.write("Monday");
       break;
     case 3:
        day = "Tuesday";
-       console.log("Tuesday");
+      
+       document.write("Tuesday");
       break;
     case 4:
       day = "Wednesday";
-      console.log("Wednesday");
+      
+      document.write("Wednesday");
       break;
     case 5:
       day = "Thursday";
-      console.log("Thursday");
+      console.log();
+      document.write("Thursday");
       break;
     case 6:
       day = "Friday";
-      console.log("Friday");
+      
+      document.write("Friday");
       break;
     case 7:
       day = "Saturday";
-      console.log("Saturday");
+      document.write("Saturday");
   }
