@@ -268,18 +268,52 @@
 
 // Set
 
-window.localStorage.setItem("color","red"); // norml way
+// window.localStorage.setItem("color","red"); // norml way
 
 
-window.localStorage.fontSize = "30px";  // withOut setItem
+// window.localStorage.fontSize = "30px";  // withOut setItem
 
-window.localStorage["fontWeigth"]= "bold";//      []
+// window.localStorage["fontWeigth"]= "bold";//      []
 
 
 
-// Get
+// // Get
 
-console.log(window.localStorage.getItem ("color"));
-console.log(window.localStorage.color);
-console.log(window.localStorage ["color"]);
-backgrondColor
+// console.log(window.localStorage.getItem ("color"));
+// console.log(window.localStorage.color);
+// console.log(window.localStorage ["color"]);
+// backgrondColor
+// *******************************************************************************************
+
+
+// let arry=[1,2,3,];
+// let narry=arry.map(function (e,i,){
+//      return e+i ;
+    
+// });
+
+// console.log(narry);
+
+
+// let frind=["dyar","roa'a","tamara","hadi"];
+// let frind=new Map()
+// frind["hadi"]="hadi"
+// frind["dyar"]="dyar"
+// frind["roa"]="roa"
+// frind["tamara"]="tamara"
+// console.log(frind);
+
+
+// frind.has("hadi")
+// frind.delete("tamara")
+// console.log(frind);
+
+
+let arry2=["a","b","c"];
+
+let DD=arry2.map(function(v){
+    console.log(v+"a");
+    document.write(v+"a"+"<br>")
+    return v
+})
+
