@@ -33,12 +33,12 @@
 
 // ****************************************************************************************
 //Task-2
-// let array3=["john", "JACOB", "jinGleHeimer", "schmidt","hadi","tamara","dyar","roa'a"];
+let array3=["john", "JACOB", "jinGleHeimer", "schmidt","hadi","tamara","dyar","roa'a"];
 
-// let capitalizeNames=array3.map(function(a,index){
-//     return a[0].toUpperCase()+a.slice(1);
-// })
-//   console.log(capitalizeNames);
+let capitalizeNames=array3.map(function(a,index){
+    return a[0].toUpperCase()+a.slice(1);
+})
+  console.log(capitalizeNames);
 
 
 //   ****************************************************************************************

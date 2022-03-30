@@ -17,12 +17,11 @@ function scoreInUniversty(x) {
     if (x >= 0 && x <= 49) {
         console.log("F");}
 
-  document.getElementById("result").innerText=[x] ;
+  document.getElementById("result").innerText=x;
  
  
     }
 
         scoreInUniversty(96);
-      
-    
+     
         

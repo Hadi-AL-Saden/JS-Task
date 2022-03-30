@@ -1,0 +1,8 @@
+body{
+    text-align: center;
+    background-color: bisque;
+}
+#sec{
+    border: dashed 5px ;
+    background-color: cadetblue;
+}
