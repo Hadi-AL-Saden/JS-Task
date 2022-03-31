@@ -3,6 +3,7 @@ body{
     background-repeat: no-repeat;
 }
 #pp{
+    border-top-right-radius: 20px;
     margin-top: -26px;
     text-align: center;
     font-size: 80px;
@@ -32,4 +33,9 @@ hr{
 
 .hp{font-size: 30px;
     color: silver;
+}
+
+h1{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
