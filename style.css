@@ -1,6 +1,6 @@
 body{
     background-image: url("https://mir-s3-cdn-cf.behance.net/projects/original/08d53492880429.Y3JvcCwxMjMxLDk2MywxMzQsNzY.gif");
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 #pp{
     border-top-right-radius: 20px;
@@ -21,9 +21,10 @@ body{
     text-align: center;
     background-color: #0d0023db;
     width: 600px;
-    height: 942px;
+    height: 1108px;
     border-inline-color: inherit;
     border-bottom-style: none;
+    
 }
 
 hr{
