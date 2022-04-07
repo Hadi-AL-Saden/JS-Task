@@ -1,6 +1,6 @@
 
 'use strict';
-let result=document.getElementById('result');
+let result=document.getElementById("result");
 
 function GetDataFromLovalStorage(){
     let storageData=localStorage.getItem('formData');

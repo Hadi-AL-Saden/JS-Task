@@ -1,5 +1,7 @@
 'use strict';
 
+//getElementById
+
 let firstName=document.getElementById('fname');
 let nameError=document.getElementById('fname-error');
 let lastName=document.getElementById('lname');
@@ -10,13 +12,12 @@ let emailError=document.getElementById('email-error');
 let passwordError=document.getElementById('password-error');
 let info=[];
 
-/*LocalStorage */
 function LocalStorageFrom(){
     let array=JSON.stringify(info);
     localStorage.setItem('formData',array);
 }
 
-/*Regestration Constructor */
+//constructor1
 function regForm(fname,lname,bdate,femail,semail,password,spassword){
 
 this.fname=fname;
@@ -36,7 +37,6 @@ renderInfo();
 LocalStorageFrom()
 }
 
-/*To return the full name */
 function userName(fname,lname){
     let x;
     let regex = /[a-zA-Z\s]+$/;
@@ -50,10 +50,9 @@ function userName(fname,lname){
     }
 }
 
-/*To check from the date */
 function checkDate(date)
 {
- let regex=/(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/;
+ let regex=/^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
  if(regex.test(date)){
      console.log('correct date');
      return date;
@@ -87,18 +86,21 @@ if ((!regex.test(femail)) && (!regex.test(semail)))
     }   
   }
 
-/*To check from password */
+//  check  password 
 function checkPassword(password,spassword){
     let regex=/^(?=.*[a-z])(?=.*[A-Z])(?=(.*[\d]){2,})[A-Za-z\d?]{8,32}$/;
     let num=/[\d]{2,}/;
     let capital=/[A-Z]/;
     let symboles=/[#$@!%&*?]/;
-    if ((regex.test(password))&& (regex.test(spassword))){ //To check from 2 passwords syntax
+
+    // check  2 passwords syntax
+    if ((regex.test(password))&& (regex.test(spassword))){ 
         console.log('password syntax is Incorrect');
         passwordError.innerHTML= 'password syntax is Incorrect';
         
     }
-    else if((!capital.test(password[0])) && (!capital.test(spassword[0]))){ //To check from the first letter
+     //To check from the first letter
+    else if((!capital.test(password[0])) && (!capital.test(spassword[0]))){
         console.log( 'Incorrect! first name must be capital.');
         passwordError.innerHTML= 'Incorrect! first name must be capital.';
     }
@@ -119,6 +121,7 @@ function checkPassword(password,spassword){
         passwordError.innerHTML= `Passwords don't match or the length is incorrect (length must be more or equal than 8 and less than or equal 32`;
     }
 }
+//constructor2
 regFormx.addEventListener('submit', handelSubmit);
 function handelSubmit(e){
     e.preventDefault();
@@ -129,7 +132,8 @@ function handelSubmit(e){
     let semail=e.target.semail.value;
     let password=e.target.password.value;
     let spassword=e.target.spassword.value;
-    new regForm(fname,lname,bdate,femail,semail,password,spassword); //Calling the constructor
+    //Calling the constructor
+    new regForm(fname,lname,bdate,femail,semail,password,spassword); 
 }
 handelSubmit();
 function renderInfo(){

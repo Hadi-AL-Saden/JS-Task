@@ -127,7 +127,6 @@ console.log(numberBetweenUs(2,8));
 // console.log(numberBetweenUs(1,3));
 document.write(`<h1>Task-8</h1>${numberBetweenUs(2,8)}<hr>`);
 
-// // *********************************************************************************************************
 //Task-9
 function contDown(n){
     let arr=[]    
@@ -141,3 +140,43 @@ function contDown(n){
     return `${arr.join(", ")}`
 }
 console.log(contDown(10));
+
+// // *********************************************************************************************************
+
+let l1= document.getElementById('ex10');
+l1.innerHTML="EX : 10";
+
+function multiplication2(num1,num2){
+    return num1*num2;
+}
+console.log(multiplication2(5,4));
+document.getElementById('sol10').innerHTML=multiplication2(5,4);
+
+// // *********************************************************************************************************
+
+let l11= document.getElementById('ex11');
+l11.innerHTML="EX : 11";
+
+function mod2(num1,num2){
+    return num1%num2;
+}
+
+console.log(mod2(2,8));
+document.getElementById('sol11').innerHTML=mod2(5,4);
+// // *********************************************************************************************************
+
+let l12= document.getElementById('ex12');
+l12.innerHTML="EX : 12";
+
+function repeatChar(str,char){
+    let count=0;
+    let i=0;
+    while(i<str.length){
+        if(char.toLowerCase()==str.charAt(i)){
+            count++;
+        }
+        i++;
+    }
+    return count;}
+console.log(repeatChar("schoool","O"));
+document.getElementById('sol12').innerHTML=repeatChar("schoool","O");
