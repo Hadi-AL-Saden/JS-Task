@@ -1,0 +1,37 @@
+.divForm{
+    width: 50%;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.divTable{
+    width: 30%;
+    display: inline-block;
+}
+#tableCon{
+    width: 100%;
+   /*border: 7px double black;*/
+    margin-top: 50px;
+}
+th{
+    border: 3px dashed currentColor;
+}
+tr{
+    text-align: center;
+}
+td{
+    border: 5px double rgb(127, 2, 138);
+    height: 20px;
+    width: 50px;
+    color: black
+}
+.img{
+height: 550px;
+width: 60%;
+position: absolute;
+right: 10px;
+display: inline-block;
+margin-bottom: 20px;
+background-image: url('https://www.droid-life.com/wp-content/uploads/2018/10/Google-Search-Data-980x637.jpg');
+background-repeat:no-repeat ;
+background-size: cover;
+}
